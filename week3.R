@@ -19,5 +19,5 @@ glimpse(df)
 #Filtering 예제
   iris
   iris %>% filter(Species=="setosa")
-  iris %>% filter(Sepal.Length>=mean(Sepal.Length))
-  
+  iris %>% 
+    filter(Sepal.Length>=mean(Sepal.Length) && Species =="setosa")
